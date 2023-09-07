@@ -68,6 +68,11 @@ public class WindowReduceTest {
                 return new Tuple2<>(stringIntegerTuple2.f0, stringIntegerTuple2.f1 + t1.f1);
             }
         });
+
+
+
+
+
         reduce.print();
 
         env.execute();
