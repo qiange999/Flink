@@ -71,8 +71,6 @@ public class WindowReduceTest {
 
 
 
-
-
         reduce.print();
 
         env.execute();
