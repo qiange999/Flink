@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public class SourceFileTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        DataStreamSource<String> stream1 = env.readTextFile("src/main/resources/input/clicks.csv");
+        DataStreamSource<String> stream1 = env.readTextFile("D:\\learning_code\\flink\\Flink\\src\\main\\resources\\input\\clicks.csv");
         stream1.print();
         env.execute();
     }
