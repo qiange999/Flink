@@ -1,5 +1,7 @@
 package cn.mrt.flink.pojo;
 
+import java.sql.Timestamp;
+
 /*
  * @author  cqh
  * @version 1.0
@@ -9,6 +11,9 @@ public class Event {
     public String user;
     public String url;
     public Long timestamp;
+
+    public Event() {
+    }
 
     public Event(String user) {
         this.user = user;
@@ -25,7 +30,7 @@ public class Event {
         return "Event{" +
                 "user='" + user + '\'' +
                 ", url='" + url + '\'' +
-                ", timestamp=" + timestamp +
+                ", timestamp=" + new Timestamp(timestamp) +
                 '}';
     }
 }
